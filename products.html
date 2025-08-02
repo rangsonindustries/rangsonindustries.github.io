@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Rangson Industries - Machinery</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+        --rangson-blue: #2B6CB0;
+        --rangson-beige: #F5F1E9;
+        --rangson-dark: #1A202C;
+        --rangson-gray: #4A5568;
+      }
+      body {
+        font-family: 'Work Sans', 'Noto Sans', sans-serif;
+      }
+      .btn {
+        @apply flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-sm font-bold leading-normal tracking-[0.015em];
+      }
+      .btn-primary {
+        @apply bg-[var(--brand-blue)] text-white;
+      }
+      .filter-chip {
+        @apply flex h-10 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full border border-transparent bg-[var(--neutral-100)] px-4 text-sm font-medium leading-normal text-[var(--neutral-800)] transition-colors duration-200;
+      }
+      .filter-chip.active,
+      .filter-chip:hover {
+        @apply bg-[var(--brand-blue)] text-white;
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--neutral-50)]">
+  <div class="relative flex size-full min-h-screen flex-col group/design-root">
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 w-full">
+      <div class="container mx-auto px-10">
+        <div class="flex items-center justify-between whitespace-nowrap py-4">
+          <div class="flex items-center gap-3 text-[var(--rangson-dark)]">
+            <div class="w-8 h-8 text-[var(--rangson-blue)]">
+              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-[var(--rangson-dark)] text-xl font-bold leading-tight tracking-[-0.015em]">Rangson
+              Industries</h2>
+          </div>
+          <nav class="hidden lg:flex flex-1 justify-center gap-8">
+            <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+              href="index.html">Home</a>
+            <a class="text-[var(--rangson-blue)] font-bold text-base leading-normal transition-colors"
+              href="products.html">Products</a>
+            <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+              href="about.html">About Us</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-[var(--rangson-blue)] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg"
+              onclick="window.location.href='contact.html'">
+              <span class="truncate">Request a Quote</span>
+            </button>
+            <button class="lg:hidden p-2 rounded-md text-[var(--rangson-dark)] hover:bg-gray-100">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </header>
+    <main class="flex-1">
+      <div class="container mx-auto px-10 py-12 md:py-16">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-[var(--neutral-800)]">Our Machinery</h2>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--neutral-500)]">Explore our comprehensive range of
+            high-quality manufacturing machines.</p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+          <div class="filter-chip active">
+            <p>All</p>
+          </div>
+          <div class="filter-chip">
+            <p>Food Processing</p>
+          </div>
+          <div class="filter-chip">
+            <p>Conveyor Belts</p>
+          </div>
+          <div class="filter-chip">
+            <p>Labeling Machines</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="w-full h-48 bg-center bg-no-repeat bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChe32TAQ7D8vH8iiiwlIb9YA5nKlAO2G76toNo_k5U-b3My_XY2p8DO7fEuO9cD27CIUc9VHRGkiUB6zefW90_J3in4aSXAnFPJoma0RyCI9CO2CMoJlMf0BydXUOB5OCxic6X0ZvnRSYNs0SNKgcCc2W7qBA5bHXq_o2Kaf1c9f5F0pI3pKQC6LamGa_LT43pCC9YwUknyaTHhhXSmCnwsEJueduGbNFyJ3A9NViXw84piMSRJTBg-Nvskjqfn_Gh53_AhmVAELo");'>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-[var(--neutral-800)] text-lg font-bold">Food Processing Machine 1</h3>
+              <p class="text-[var(--neutral-500)] text-sm mt-2 flex-1">High-speed food processing machine for various
+                applications.</p>
+              <a class="mt-4 text-sm font-bold text-[var(--brand-blue)] hover:underline" href="#">Learn More</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="w-full h-48 bg-center bg-no-repeat bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8RcI-MN4HYblYndWtyXbx6MUyQl4UkY-BrYWvantGXsyOHla6RLGzAU9Xqwkx9yUTEFHt0tf1ZhM58_0C-EPQ75Mj3RWHk6wjAE6tPbo9vRnAAoa3pBMH6WfS-qBIOOL7hQglNMZzV4kOJaTcXriFWXtCGAPaYEYzjngYwV5CPrGhbkVSO-ROVeaZoPCcX4GCsNjF-EwiNJ_Rl7ArA2ku3OEjCnVE4egGZe9h-xZDFPtnEVo-qWcUAYkaqI5cRxo_i5HNcxbAvNs");'>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-[var(--neutral-800)] text-lg font-bold">Food Processing Machine 2</h3>
+              <p class="text-[var(--neutral-500)] text-sm mt-2 flex-1">Versatile food processing machine with adjustable
+                settings.</p>
+              <a class="mt-4 text-sm font-bold text-[var(--brand-blue)] hover:underline" href="#">Learn More</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="w-full h-48 bg-center bg-no-repeat bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5iaX0bQwuXgrTTbdlFn4Zx7E-TZyYTSP_vXOtCpsiTfzZGmx3miGrJN2DyXqAbMMrui9QY3K8z4y1Cv4l1yhXMzD8X9YHwb1coQBWx2aG2k2SRdIW12DbYMJGU9ZUG7eajE0tM6W_UlcwSJcTNQ2JwicEZkywlvSoZs4CssKGz0BKE7gppgpB-JMJtLko1-U0e2h3A1C8ILByjtrgTn4eO3hXL_W_TCLzf5ATf6RJODXFlZNnLtzQ4o_bnjIw9s2csdBOiZOnaL0");'>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-[var(--neutral-800)] text-lg font-bold">Conveyor Belt System 1</h3>
+              <p class="text-[var(--neutral-500)] text-sm mt-2 flex-1">Efficient conveyor belt system for smooth
+                material handling.</p>
+              <a class="mt-4 text-sm font-bold text-[var(--brand-blue)] hover:underline" href="#">Learn More</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="w-full h-48 bg-center bg-no-repeat bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBonpxhgWOUMLMKwF0BWV_YctC5XlqAoBAkfniAhJ-D7Xyrhgmi9xH2FohnVbXcIpUu0iY_EaxylBi8PujVxQEmZK4P-YzgPbxAsDBjWPCw1YXOTjKUAiZPY9jzcjXazIzQrHSjCp9_JzNCgYTb_3XCPQsjOXYD4nCP4j5eF6QhZ4NVdCPlQntwBAi0_nBxNAx7U_AubEs-xjVK9GR_L9S7t4itunJFoIkwUpf6ELdGKVDH0WSwR4J4vzNG22RdnGl_KVO0IjiEx6g");'>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-[var(--neutral-800)] text-lg font-bold">Conveyor Belt System 2</h3>
+              <p class="text-[var(--neutral-500)] text-sm mt-2 flex-1">Heavy-duty conveyor belt system for industrial
+                use.</p>
+              <a class="mt-4 text-sm font-bold text-[var(--brand-blue)] hover:underline" href="#">Learn More</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="w-full h-48 bg-center bg-no-repeat bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASBWaJyG1mrgG8rqzgCKA5p7mWRX18N8FCBeUD9VgK0NVc-jfc7w94SJmnyH2_8_xUsaKi7YHJfHw5N-_KkZr5volzPTy0NFBjmRicJM7Ex4FngLTsvX6r2auxwHF1MIEpAlrp6gx7xsu5c1QfReEuGFD1K_ENpwIBV68BFuzLjJQ_R_CrBxAN53z_p6GOghMC6dehjl_zCPdNFdOXimB6CYmlI7OsizKt_rIJ8nfkjMyweCM_l_7LKbwg1eA89sPfSi819PgEr1E");'>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-[var(--neutral-800)] text-lg font-bold">Labeling Machine 1</h3>
+              <p class="text-[var(--neutral-500)] text-sm mt-2 flex-1">Precision labeling machine for accurate product
+                labeling.</p>
+              <a class="mt-4 text-sm font-bold text-[var(--brand-blue)] hover:underline" href="#">Learn More</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="w-full h-48 bg-center bg-no-repeat bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAPGShU5NZlNXmTXgpbDda-eep9EdIfT8pQQ-ydfrzf_ZLhGhvGzvBel_vES8GGYDG_poiRbz0kcRo1AWq9zK5NW-yTRMQfd-qG_K2BooFyhep8wJmvOgrrMfRjrZPljDp0wM3rOngj0NU2aglpaYLFceNAbkW0Rpxs9dtQUjDVdyXwbA3i3pUfEj9eIM8NULyCs6D31OGUWrSmXnpbhZYvXxuHFC4FfWCyr-h36VNyGExgM7ZSu7ZXap-_O3mFBz1rUOm4s9wT3w");'>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-[var(--neutral-800)] text-lg font-bold">Labeling Machine 2</h3>
+              <p class="text-[var(--neutral-500)] text-sm mt-2 flex-1">Compact labeling machine for small-scale
+                operations.</p>
+              <a class="mt-4 text-sm font-bold text-[var(--brand-blue)] hover:underline" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  <footer class="bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 md:justify-start">
+          <a class="text-[var(--neutral-500)] hover:text-[var(--brand-blue)] text-sm font-normal leading-normal transition-colors"
+            href="#">Privacy Policy</a>
+          <a class="text-[var(--neutral-500)] hover:text-[var(--brand-blue)] text-sm font-normal leading-normal transition-colors"
+            href="#">Terms of Service</a>
+        </div>
+        <p class="text-sm text-[var(--neutral-500)]">© 2024 Rangson Industries. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+</body>
+
+</html>

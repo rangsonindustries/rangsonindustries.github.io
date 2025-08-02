@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | Rangson Industries</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --rangson-blue: #2B6CB0;
+      --rangson-beige: #F5F1E9;
+      --rangson-dark: #1A202C;
+      --rangson-gray: #4A5568;
+    }
+    body {
+      font-family: 'Work Sans', 'Noto Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--rangson-beige)] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 w-full">
+    <div class="container mx-auto flex items-center justify-between px-10 py-4">
+      <div class="flex items-center gap-3 text-[var(--rangson-dark)]">
+        <div class="w-8 h-8 text-[var(--rangson-blue)]">
+          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+              fill="currentColor"></path>
+          </svg>
+        </div>
+        <h2 class="text-[var(--rangson-dark)] text-xl font-bold leading-tight tracking-[-0.015em]">Rangson Industries
+        </h2>
+      </div>
+      <nav class="hidden md:flex flex-1 justify-center gap-8">
+        <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+          href="index.html">Home</a>
+        <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+          href="products.html">Products</a>
+        <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+          href="about.html">About Us</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <button
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-[var(--rangson-blue)] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg"
+          onclick="window.location.href='contact.html'">
+          <span class="truncate">Request a Quote</span>
+        </button>
+        <button class="md:hidden p-2 rounded-md text-[var(--rangson-dark)] hover:bg-gray-100">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="flex-1 flex items-center justify-center py-16 bg-white">
+    <div class="container mx-auto px-10 max-w-xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-[var(--rangson-dark)] mb-8 text-center">Request a Quote</h1>
+      <form id="quote-form"
+        method="POST"
+        class="space-y-6 bg-[var(--rangson-beige)] p-8 rounded-2xl shadow-xl border border-[var(--rangson-blue)]"
+        autocomplete="off">
+        <div>
+          <label class="block text-[var(--rangson-dark)] font-medium mb-2" for="name">Name</label>
+          <input
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[var(--rangson-blue)] focus:ring-2 focus:ring-[var(--rangson-blue)] outline-none transition"
+            type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label class="block text-[var(--rangson-dark)] font-medium mb-2" for="email">Email</label>
+          <input
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[var(--rangson-blue)] focus:ring-2 focus:ring-[var(--rangson-blue)] outline-none transition"
+            type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label class="block text-[var(--rangson-dark)] font-medium mb-2" for="phone">Phone</label>
+          <input
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[var(--rangson-blue)] focus:ring-2 focus:ring-[var(--rangson-blue)] outline-none transition"
+            type="tel" id="phone" name="phone" />
+        </div>
+        <div>
+          <label class="block text-[var(--rangson-dark)] font-medium mb-2" for="message">Message / Requirements</label>
+          <textarea
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[var(--rangson-blue)] focus:ring-2 focus:ring-[var(--rangson-blue)] outline-none transition"
+            id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit"
+          class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-[var(--rangson-blue)] text-white text-lg font-bold leading-normal tracking-[0.015em] hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg">Send
+          Request</button>
+        <p class="text-xs text-gray-500 text-center">We'll never share your information with anyone else.</p>
+      </form>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-[var(--rangson-dark)] text-white mt-12">
+    <div class="container mx-auto py-12 px-10">
+      <div class="flex flex-wrap justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 text-[var(--rangson-blue)]">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-white text-xl font-bold">Rangson Industries</h2>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Privacy Policy</a>
+          <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Terms of Service</a>
+          <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+        <p>© 2024 Rangson Industries. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.getElementById('quote-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const endpoint = 'https://formspree.io/f/xzzveeag';
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      // Create a responsive toast
+      const toast = document.createElement('div');
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      toast.className = 'fixed top-6 left-1/2 transform -translate-x-1/2 bg-[var(--rangson-blue)] text-white px-6 py-4 rounded-xl shadow-lg text-base font-semibold z-[9999] max-w-xs w-full text-center transition-opacity duration-300';
+      toast.textContent = 'Thank you! Your request has been submitted.';
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.add('opacity-0');
+        setTimeout(() => {
+          toast.remove();
+          window.location.href = 'index.html';
+        }, 300);
+      }, 2000);
+    } else {
+      alert('There was a problem submitting your request. Please try again.');
+    }
+  });
+  </script>
+</body>
+
+</html>

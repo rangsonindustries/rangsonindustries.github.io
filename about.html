@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Rangson Industries</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+      --rangson-blue: #2B6CB0;
+      --rangson-beige: #F5F1E9;
+      --rangson-dark: #1A202C;
+      --rangson-gray: #4A5568;
+    }
+    body {
+      font-family: 'Work Sans', 'Noto Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--rangson-beige)] min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 w-full">
+        <div class="container mx-auto flex items-center justify-between px-10 py-4">
+            <div class="flex items-center gap-3 text-[var(--rangson-dark)]">
+                <div class="w-8 h-8 text-[var(--rangson-blue)]">
+                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h2 class="text-[var(--rangson-dark)] text-xl font-bold leading-tight tracking-[-0.015em]">Rangson
+                    Industries</h2>
+            </div>
+            <nav class="hidden md:flex flex-1 justify-center gap-8">
+                <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+                    href="products.html">Products</a>
+                <a class="text-[var(--rangson-blue)] font-bold text-base leading-normal transition-colors"
+                    href="about.html">About Us</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-[var(--rangson-blue)] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg"
+                    onclick="window.location.href='contact.html'">
+                    <span class="truncate">Request a Quote</span>
+                </button>
+                <button class="md:hidden p-2 rounded-md text-[var(--rangson-dark)] hover:bg-gray-100">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center py-16 bg-white">
+        <div class="container mx-auto px-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 flex justify-center md:justify-start">
+                <img src="images/image.png" alt="Founder of Rangson Industries"
+                    class="rounded-2xl shadow-xl w-72 h-72 object-cover border-4 border-[var(--rangson-blue)]" />
+            </div>
+            <div class="flex-1">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-[var(--rangson-dark)] mb-6">About Us</h1>
+                <p class="text-lg text-[var(--rangson-gray)] mb-6">
+                    With over 50 years of generational expertise in machine manufacturing, our company brings a legacy
+                    of precision, innovation, and reliability to the food processing industry. Backed by decades of
+                    engineering excellence with deep industry insight, we are committed to delivering cutting-edge
+                    solutions that meet the evolving needs of modern food producers.
+                </p>
+                <p class="text-lg text-[var(--rangson-gray)]">
+                    At the core of our business is a dedication to quality, performance, and long-term client
+                    partnerships. Whether you're scaling operations or optimizing production, our machines are built to
+                    perform today and into the future.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[var(--rangson-dark)] text-white mt-12">
+        <div class="container mx-auto py-12 px-10">
+            <div class="flex flex-wrap justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 text-[var(--rangson-blue)]">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-xl font-bold">Rangson Industries</h2>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-6">
+                    <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Terms of Service</a>
+                    <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2024 Rangson Industries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

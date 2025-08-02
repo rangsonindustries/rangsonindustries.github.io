@@ -1,0 +1,208 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <title>Rangson Industries</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+        --rangson-blue: #2B6CB0;
+        --rangson-beige: #F5F1E9;
+        --rangson-dark: #1A202C;
+        --rangson-gray: #4A5568;
+      }
+      body {
+        font-family: 'Work Sans', 'Noto Sans', sans-serif;
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--rangson-beige)]">
+  <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-10 py-4">
+          <div class="flex items-center gap-3 text-[var(--rangson-dark)]">
+            <div class="w-8 h-8 text-[var(--rangson-blue)]">
+              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-[var(--rangson-dark)] text-xl font-bold leading-tight tracking-[-0.015em]">Rangson
+              Industries</h2>
+          </div>
+          <nav class="hidden md:flex flex-1 justify-center gap-8">
+            <a class="text-[var(--rangson-blue)] font-bold text-base leading-normal transition-colors"
+              href="index.html">Home</a>
+            <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+              href="products.html">Products</a>
+            <a class="text-[var(--rangson-gray)] hover:text-[var(--rangson-blue)] text-base font-medium leading-normal transition-colors"
+              href="about.html">About Us</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-[var(--rangson-blue)] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg"
+              onclick="window.location.href='contact.html'">
+              <span class="truncate">Request a Quote</span>
+            </button>
+            <button class="md:hidden p-2 rounded-md text-[var(--rangson-dark)] hover:bg-gray-100">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1">
+        <section class="relative">
+          <div class="absolute inset-0 bg-cover bg-center"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFYErDP8nrBSDbBFmqiBQtOGHhpFIO6YHp1Q05BrP9gcEWcsp0wRearfA7QUXiDiUVTiczrhHKUd8VSVqEzvZ4_-auLHugH6_2d4Vwt9lXK7lUB7kVW8LQmhsdC5oqldrVTp2smLndD1CWPTd2t3RiNc5qVB2M-ZUy9cgjtBSwOMLDQKOjNWM-ZcwNs7AkLqX1jMEUQXoOKTbfdn76iGCCyxrCpO8aJQ2eUy3_65ReohJRJZzBe_fusxIMyCOAdmtKjVHO08miKmo");'>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+          <div class="relative container mx-auto px-10 py-48 text-white">
+            <div class="max-w-3xl text-left">
+              <h1 class="text-5xl font-extrabold leading-tight tracking-tight md:text-6xl">
+                Innovative Manufacturing Solutions
+              </h1>
+              <p class="mt-6 text-lg font-light leading-relaxed max-w-2xl text-gray-200">
+                Rangson Industries provides cutting-edge machinery and equipment to optimize your production processes.
+                Our solutions are designed for efficiency, reliability, and scalability.
+              </p>
+              <div class="mt-10">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-[var(--rangson-blue)] text-white text-lg font-bold leading-normal tracking-[0.015em] hover:bg-blue-800 transition-transform transform hover:scale-105 shadow-xl">
+                  <span class="truncate">Explore Our Products</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-24 bg-white">
+          <div class="container mx-auto px-10">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-[var(--rangson-dark)] leading-tight tracking-tight">Our Product
+                Categories</h2>
+              <p class="mt-4 text-lg text-[var(--rangson-gray)] max-w-2xl mx-auto">Discover our wide range of machinery
+                designed to meet the diverse needs of modern manufacturing.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              <div
+                class="group flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+                <div class="overflow-hidden">
+                  <div class="w-full h-56 bg-center bg-cover transition-transform duration-500 group-hover:scale-110"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRVvQvJB_tBr0PQbsuqfy6Dyzhs43qp0Olfb-iat1CeUzncfkAOH7zYNfVILcm4tPW98BKY6Y5UPqi0mnI4tTOA4dxIwUzaHBZauMErP2kNRHvgeXSZpTLU6aUX8_NUnukFQf1rM91-ZgjkhTWxdK3MigTPPWshogOYU7PTMbOillFTSl3pSro2VbJz9zN1yiItXP72ATdrLvYihzK1cuVClgXDEBkxmrBqD-_hVQAnMe7o-oGmoAS4Of6e0pRRHSih_5LfWWZ-84");'>
+                  </div>
+                </div>
+                <div class="p-6 flex-grow">
+                  <h3 class="text-xl font-bold text-[var(--rangson-dark)]">Food Processing Machinery</h3>
+                  <p class="mt-2 text-[var(--rangson-gray)]">Enhance food production efficiency and quality with our
+                    state-of-the-art equipment.</p>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+                <div class="overflow-hidden">
+                  <div class="w-full h-56 bg-center bg-cover transition-transform duration-500 group-hover:scale-110"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrq9OcQ9KXztlCjmeDnqa4AukJrsTsgdW1llFnsmH7R46SZNT2C2FoGbsjNRhwoW5BUa7FJvHokg6J9zKiL9pJ0F9G0OZTMLJrG1UcZKi2hfkLcjwtUUN0i8j0X97BKYPkHp14uvH-XiGRLxbgVDI4w_ny2AAx3yZfZ34igfYviXd_CmfrfNp48vmBydwvUeNkPAqT-JPT2FotZFIs397GrB3DK5zMznqDuEWYpgUiG8N0G235J9n9f8C3gptXCgJ14Cbzj_69Oyw");'>
+                  </div>
+                </div>
+                <div class="p-6 flex-grow">
+                  <h3 class="text-xl font-bold text-[var(--rangson-dark)]">Conveyor Belt Systems</h3>
+                  <p class="mt-2 text-[var(--rangson-gray)]">Streamline your material handling and workflow with our
+                    reliable conveyor systems.</p>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+                <div class="overflow-hidden">
+                  <div class="w-full h-56 bg-center bg-cover transition-transform duration-500 group-hover:scale-110"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbTdX-__CxzKDOejiFn2tWqjIXkMsEei8gAvYuv5mdWNR_Ms4KcDG3OZAPCF29BsB5jXVZnkXmzwDQKxilCyLwnnboEZfdTzpjdljg5LWhMn-YbPAZ0ixA4MdYDs6y7-wX_cn2RqC6yiE9MDEYbfC0NbedzkDo9tJV5hadDGW5TYH7R1Wy4KVhsFsJAmQhAOPVQBI9Pm4bH2t3lnPZKDmBD0SZEF6TUOOkYbNvGdupNS1SvB4piHp_1A7v0QXvBL7AaG5QI4w0J_M");'>
+                  </div>
+                </div>
+                <div class="p-6 flex-grow">
+                  <h3 class="text-xl font-bold text-[var(--rangson-dark)]">Labeling &amp; Packaging Machines</h3>
+                  <p class="mt-2 text-[var(--rangson-gray)]">Ensure precise labeling and secure packaging for all your
+                    products.</p>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+                <div class="overflow-hidden">
+                  <div class="w-full h-56 bg-center bg-cover transition-transform duration-500 group-hover:scale-110"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmg69Fog0Ix4yuP37uyR_rU0mBtsAIDBJ3e7SZjkpBarRv04QnbcG1CgxyI1tgV7VLZaH79iCGS-xJpRROfLBHI8sxeBrJllBP9VCMbCfh0pg_PPhiodXYaowdxjEMk73BaG22Lkf26fKOjdmxBcYHZc-cqy_63q2gUCmPULYSftij6-1AgX4_TPcFxrEJHtSZI01cZBEGPp3MeaZmaVddcwV9x9z3R_z8QQipaKRd728cCOukxxfsHBxcus_8l_l-1UgxsiCCaK0");'>
+                  </div>
+                </div>
+                <div class="p-6 flex-grow">
+                  <h3 class="text-xl font-bold text-[var(--rangson-dark)]">Quality Control Equipment</h3>
+                  <p class="mt-2 text-[var(--rangson-gray)]">Uphold the highest standards of product quality and
+                    compliance.</p>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+                <div class="overflow-hidden">
+                  <div class="w-full h-56 bg-center bg-cover transition-transform duration-500 group-hover:scale-110"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBH0j5jft9OpClBDFz1ZbDE-XkHVi-mVWiZHROdfLp-663GI2w1dLN6cFkcd0bUP9wj1KItV0vCy55_BYBxC18D_m5knZpRBWW79_a-eT8DUU7dR2_a8gKL_69zd4HhHzlT5jINIT0MI1wUP857NV0i87stRXw7b9tB6gPwGV0VvSh-CLKcZrsTk8Xzi5OP1RSh5H8EULlYgiIpTPdjePj-SbKAWki3WCpsxkVNoJGdq58fSlaPosAiffA2M076gRxtEovT9-U2-bQ");'>
+                  </div>
+                </div>
+                <div class="p-6 flex-grow">
+                  <h3 class="text-xl font-bold text-[var(--rangson-dark)]">Custom Automation Solutions</h3>
+                  <p class="mt-2 text-[var(--rangson-gray)]">Bespoke automation solutions tailored to your unique
+                    manufacturing challenges.</p>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+                <div class="overflow-hidden">
+                  <div class="w-full h-56 bg-center bg-cover transition-transform duration-500 group-hover:scale-110"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBG4l79YP_Jl1DGvW1zqxr90iueKyJGqkA4eqtgXBFuaKyepG5B3Hb8fAWKfrV1kbjQeGYoCtmUz885reza3EkC4xZIxGCifJs-SZyhCo_pYPjgvQKcPOI8ICNk7A7AtlCv_V3n9N2F3m0WcDRb3W2I1zQmK0mm3WljwMev2GnlWKmBjhAoFqd8E11Uk_WSIkqb8B1nnNybi8g6ZShZ1czl8Sg-DjhcG9NKYiK8VSno2_bkVQI4_cR7yLo_v2Yj97i1y4OhK3x1Uc");'>
+                  </div>
+                </div>
+                <div class="p-6 flex-grow">
+                  <h3 class="text-xl font-bold text-[var(--rangson-dark)]">Maintenance and Support</h3>
+                  <p class="mt-2 text-[var(--rangson-gray)]">Comprehensive support and maintenance to ensure equipment
+                    longevity and performance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[var(--rangson-dark)] text-white">
+        <div class="container mx-auto py-12 px-10">
+          <div class="flex flex-wrap justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 text-[var(--rangson-blue)]">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-xl font-bold">Rangson Industries</h2>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6">
+              <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Privacy Policy</a>
+              <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Terms of Service</a>
+              <a class="text-gray-400 hover:text-white text-base transition-colors" href="#">Contact Us</a>
+            </div>
+          </div>
+          <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+            <p>© 2024 Rangson Industries. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
